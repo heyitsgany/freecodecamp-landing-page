@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>FCC: Product Landing Page</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <img
+        src="./logo.svg"
+        alt="ghostbusters logo"
+        class="header__logo"
+        id="header-img"
+      />
+      <button class="nav__toggle">
+        <img
+          src="./icon-hamburger.svg"
+          alt="navigation menu"
+          class="nav__toggle--image"
+        />
+      </button>
+      <nav class="nav__menu" id="nav-bar">
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a href="#about" class="nav-link nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#commercial" class="nav-link nav__link">Commercial</a>
+          </li>
+          <li class="nav__item">
+            <a href="#quote" class="nav-link nav__link nav__link--btn"
+              >Get a Quote</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Something strange in your neighbourhood?</h1>
+          <a href="#quote" class="hero__btn btn-full">Get a quote</a>
+          <a href="#about" class="hero__btn btn-ghost">Show me more</a>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <h2 class="section__title about__title">
+          Something weird and it don't look good?
+        </h2>
+        <div class="about__row">
+          <div class="about__item">
+            <img src="moon-icon.svg" alt="moon and stars" class="about__icon" />
+            <p>
+              Are you troubled by strange noises in the middle of the night?
+            </p>
+          </div>
+          <div class="about__item">
+            <img
+              src="house-icon.svg"
+              alt="moon and stars"
+              class="about__icon"
+            />
+            <p>
+              Do you experience feelings of dread in your basement or attic?
+            </p>
+          </div>
+          <div class="about__item">
+            <img
+              src="ghost-icon.svg"
+              alt="moon and stars"
+              class="about__icon"
+            />
+            <p>
+              Have you or any of your family ever seen a spook, spectre, or
+              ghost?
+            </p>
+          </div>
+        </div>
+        <p class="about__text">
+          Our courteous and efficient staff is on call 24 hours a day to serve
+          all your supernatural elimination needs.
+        </p>
+      </section>
+
+      <section class="video" id="commercial">
+        <h2 class="section__title video__title">We're ready to believe you!</h2>
+        <iframe
+          id="video"
+          type="text/html"
+          src="https://www.youtube.com/embed/sRee26pfVzU?controls=0&modestbranding=1&color=white&iv_load_policy=3"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section class="quote" id="quote">
+        <h2 class="section__title quote__title">
+          No job is too big, no fee is to big!
+        </h2>
+        <p>
+          Are you having trouble with a pesky poltergeist? Is your refrigerator
+          home to a six thousand-year-old demi-god? Did your bath tub just try
+          to eat you? Let us make your ghost problem, our ghost problem!
+        </p>
+        <p>
+          Our service includes discreet and quite investigation, entrapment, and
+          storage in our specialized containment facility.
+        </p>
+        <p>Our staff is available 24 hours a day, 7 days a week.</p>
+        <div class="quote__form--container">
+          <h2 class="quote__form--title">Get a quote</h2>
+          <form class="quote__form" id="form" action="#">
+            <input
+              type="email"
+              name="email"
+              class="form__input"
+              id="email"
+              placeholder="Please enter your email"
+            />
+            <input
+              type="submit"
+              class="form__submit"
+              id="submit"
+              value="Submit"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img src="./logo.svg" alt="ghostbusters logo" class="footer__logo" />
+      <div class="footer__social">
+        <ul class="social__links">
+          <li class="social__item">
+            <a href="https://www.facebook.com/Ghostbusters" target="_blank">
+              <img
+                src="./icon-facebook.svg"
+                alt="facebook icon"
+                class="social__icon"
+            /></a>
+          </li>
+          <li class="social__item">
+            <a href="https://twitter.com/Ghostbusters" target="_blank">
+              <img
+                src="./icon-twitter.svg"
+                alt="twitter icon"
+                class="social__icon"
+            /></a>
+          </li>
+          <li class="social__item">
+            <a href="https://www.instagram.com/ghostbusters/" target="_blank">
+              <img
+                src="./icon-instagram.svg"
+                alt="instagram icon"
+                class="social__icon"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <p class="attribution">
+        Designed and coded by
+        <a
+          href="https://twitter.com/HeyItsGany"
+          target="_blank"
+          class="attribution__link"
+          >Jason Heys</a
+        >.
+      </p>
+      <p class="copyright">
+        Ghostbusters TM & © 2021 CTMG. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
